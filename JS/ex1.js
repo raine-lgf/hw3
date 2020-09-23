@@ -1,14 +1,28 @@
 /* HOMEWORK 3
 Example 1 JavaScript code
 */
-
 console.log("Felix's Output from HW 3 Example 1");
 
-const name = prompt("Enter your name:");
-alert(`Hello, ${name}`);
+var name=prompt("Enter name: ");
+var grade=parseInt(prompt("Enter grade"));
 
-const number = Number(prompt("Number of units completed:"));
-if (number >= 0) {
-  console.log(`${number} is positive`);
+if(grade<0){
+    console.log("Invalid grade");
 }
-alert(`Your grade standing is `);
+else{
+    console.log("Hello "+name);
+    
+    if(grade>=0 && grade<=30){
+        console.log("Your grade standing is Freshman");
+    }
+if(grade>=31 && grade<=60){
+    console.log("Your grade standing is Sophomore");
+}
+if(grade>=61 && grade<=90){
+    console.log("Your grade standing is Junior");
+}
+if(grade>=91){
+    console.log("Your grade standing is senior");
+}
+
+}
